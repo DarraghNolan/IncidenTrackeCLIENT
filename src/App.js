@@ -41,11 +41,17 @@ function App() {
             <Route
               path="/driveoffs"
               element={
+                <DriveOffs />
+              }
+            />
+            {/* <Route
+              path="/driveoffs"
+              element={
                 <Protected isLoggedIn={auth.isLoggedIn}>
                   <DriveOffs />
                 </Protected>
               }
-            />
+            /> */}
             <Route
               path="/adddriveoff"
               element={
