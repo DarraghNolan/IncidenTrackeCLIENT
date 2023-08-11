@@ -44,7 +44,7 @@ const DriveOffs = () => {
   const handleDelete = async (id)=>{
     try{
       //  --  Heroku Connection
-      await axios.delete("https://incidentracker-e5eace51cecc.herokuapp.com/driveoffs/"+id)
+      await axios.delete("https://incidentrackerheroku-f9b4e6122ea4.herokuapp.com/driveoffs/"+id)
       //
       //  --  Standard LocalHost Connection
       // await axios.delete("http://localhost:8800/driveoffs/"+id)

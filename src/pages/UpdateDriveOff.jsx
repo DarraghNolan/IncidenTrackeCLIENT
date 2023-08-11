@@ -32,7 +32,7 @@ const UpdateDriveOff = () =>{
         const fetchDriveOff = async () => {
           try {
             //  --  Heroku Connection
-            const response = await axios.get(`https://incidentracker-e5eace51cecc.herokuapp.com/driveoffs/${driveOffId}`);
+            const response = await axios.get(`https://incidentrackerheroku-f9b4e6122ea4.herokuapp.com/driveoffs/${driveOffId}`);
             //
             //  --  Standard Localhost Connection
             // const response = await axios.get(`http://localhost:8800/driveoffs/${driveOffId}`);
@@ -68,7 +68,7 @@ const UpdateDriveOff = () =>{
         e.preventDefault()
         try{
             //  --  Heroku Connection
-            await axios.put("https://incidentracker-e5eace51cecc.herokuapp.com/driveoffs/" + driveOffId, driveoff)
+            await axios.put("https://incidentrackerheroku-f9b4e6122ea4.herokuapp.com/driveoffs/" + driveOffId, driveoff)
             //
             //  --  Standard LocalHost Connection
             // await axios.put("http://localhost:8800/driveoffs/" + driveOffId, driveoff)
