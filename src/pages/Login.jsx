@@ -20,7 +20,7 @@ const Login = ({ isLoggedIn, setIsLoggedIn }) => {
       // "http://localhost:8800/login"
 
       //  --  Heroku Connection
-      "https://incidentracker-e5eace51cecc.herokuapp.com/login"
+      "https://incidentracker-e5eace51cecc.herokuapp.com/users"
       , {
       Name: name,
       Password: password,
