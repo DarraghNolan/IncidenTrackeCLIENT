@@ -39,12 +39,6 @@ function App() {
               }
             />
             <Route
-              path="/login"
-              element={
-                <Login isLoggedIn={auth.isLoggedIn} setIsLoggedIn={auth.logIn} />
-              }
-            />
-            <Route
               path="/driveoffs"
               element={
                 <Protected isLoggedIn={auth.isLoggedIn}>
