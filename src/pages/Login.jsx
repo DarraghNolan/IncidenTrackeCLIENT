@@ -24,7 +24,9 @@ const Login = ({ isLoggedIn, setIsLoggedIn }) => {
       , {
       Name: name,
       Password: password,
-    }).then((response) => {
+      },
+      { mode: 'no-cors' }
+    ).then((response) => {
 
       if(response.data.message){
         console.log(response);
