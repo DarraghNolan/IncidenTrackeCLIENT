@@ -33,25 +33,25 @@ function App() {
       </Protected>
           <Routes>
             <Route
-              path="/*"
+              path="/login"
               element={
                 <Login isLoggedIn={auth.isLoggedIn} setIsLoggedIn={auth.logIn} />
               }
             />
-            <Route
+            {/* <Route
               path="/driveoffs"
               element={
                 <Protected isLoggedIn={auth.isLoggedIn}>
                   <DriveOffs />
                 </Protected>
               }
-            />
-            {/* <Route
+            /> */}
+            <Route
               path="/*"
               element={
                 <DriveOffs />
               }
-            /> */}
+            />
             <Route
               path="/adddriveoff"
               element={
